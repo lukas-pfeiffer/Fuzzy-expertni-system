@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FUNCTION_BLOCK>
+  <VAR_INPUT NAME="Kurak" TYPE="REAL" RANGE="-50 350" />
+  <VAR_OUTPUT NAME="Hodnota" TYPE="REAL" RANGE="-0,1 0,1" />
+  <FUZZIFY NAME="Kurak">
+    <TERM NAME="Ne" POINTS="-50 0 0 50" />
+    <TERM NAME="Cigarety" POINTS="50 100 100 150" />
+    <TERM NAME="Doutniky" POINTS="150 200 200 250" />
+    <TERM NAME="Vodarna" POINTS="250 300 300 350" />
+  </FUZZIFY>
+  <DEFUZZIFY METHOD="CoG" ACCU="MAX" NAME="Hodnota">
+    <TERM NAME="Snizuje" POINTS="-0,1 -0,1 -0,05 0" />
+    <TERM NAME="Zustava" POINTS="-0,05 0 0 0,05" />
+    <TERM NAME="Zvysuje" POINTS="0 0,05 0,1 0,1" />
+  </DEFUZZIFY>
+  <RULEBLOCK AND="MIN" OR="MAX">
+    <RULE NUMBER="1" TEXT="IF Kurak IS Ne THEN Hodnota IS Snizuje" />
+    <RULE NUMBER="2" TEXT="IF Kurak IS Cigarety THEN Hodnota IS Zustava" />
+    <RULE NUMBER="3" TEXT="IF Kurak IS Doutniky THEN Hodnota IS Zvysuje" />
+    <RULE NUMBER="4" TEXT="IF Kurak IS Vodarna THEN Hodnota IS Snizuje" />
+  </RULEBLOCK>
+</FUNCTION_BLOCK>

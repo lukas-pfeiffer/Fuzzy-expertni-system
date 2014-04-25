@@ -1,0 +1,16 @@
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\bin\Debug\Fuzzy_expertni_system.exe.config
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\bin\Debug\Fuzzy_expertni_system.exe
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\bin\Debug\Fuzzy_expertni_system.pdb
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\bin\Debug\DotFuzzy.xml
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\MainWindow.baml
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\Vypis.baml
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\MainWindow.g.cs
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\Vypis.g.cs
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\App.g.cs
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\Fuzzy_expertni_system_MarkupCompile.cache
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\Fuzzy_expertni_system.g.resources
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\Fuzzy_expertni_system.Properties.Resources.resources
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\Fuzzy_expertni_system.csproj.GenerateResource.Cache
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\Fuzzy_expertni_system.exe
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\Fuzzy_expertni_system.pdb
+C:\Users\Lukasinho\Documents\Visual Studio 2012\Projects\Fuzzy_expertni_system\Fuzzy_expertni_system\obj\Debug\Fuzzy_expertni_system.csprojResolveAssemblyReference.cache

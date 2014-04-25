@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FUNCTION_BLOCK>
+  <VAR_INPUT NAME="Vek" TYPE="REAL" RANGE="-100 150" />
+  <VAR_OUTPUT NAME="Hodnota" TYPE="REAL" RANGE="-0,1 0,1" />
+  <FUZZIFY NAME="Vek">
+    <TERM NAME="Mlady" POINTS="-100 18 20 27" />
+    <TERM NAME="Stredni" POINTS="25 30 45 50" />
+    <TERM NAME="Stary" POINTS="45 50 80 150" />
+  </FUZZIFY>
+  <DEFUZZIFY METHOD="CoG" ACCU="MAX" NAME="Hodnota">
+    <TERM NAME="Snizuje" POINTS="-0,1 -0,1 -0,05 0" />
+    <TERM NAME="Zustava" POINTS="-0,05 0 0 0,05" />
+    <TERM NAME="Zvysuje" POINTS="0 0,05 0,1 0,1" />
+  </DEFUZZIFY>
+  <RULEBLOCK AND="MIN" OR="MAX">
+    <RULE NUMBER="1" TEXT="IF Vek IS Mlady THEN Hodnota IS Zvysuje" />
+    <RULE NUMBER="2" TEXT="IF Vek IS Stredni THEN Hodnota IS Zustava" />
+    <RULE NUMBER="3" TEXT="IF Vek IS Stary THEN Hodnota IS Zvysuje" />
+  </RULEBLOCK>
+</FUNCTION_BLOCK>

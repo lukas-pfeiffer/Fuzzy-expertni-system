@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FUNCTION_BLOCK>
+  <VAR_INPUT NAME="Zaludek" TYPE="REAL" RANGE="-51 351" />
+  <VAR_OUTPUT NAME="Hodnota" TYPE="REAL" RANGE="-0,1 0,1" />
+  <FUZZIFY NAME="Zaludek">
+    <TERM NAME="Lacno" POINTS="-51 0 0 100" />
+    <TERM NAME="Lehka" POINTS="0 100 100 200" />
+    <TERM NAME="Stredni" POINTS="100 200 200 300" />
+    <TERM NAME="Nadmerna" POINTS="200 300 300 351" />
+  </FUZZIFY>
+  <DEFUZZIFY METHOD="CoG" ACCU="MAX" NAME="Hodnota">
+    <TERM NAME="Snizuje" POINTS="-0,1 -0,1 -0,05 0" />
+    <TERM NAME="Zustava" POINTS="-0,05 0 0 0,05" />
+    <TERM NAME="Zvysuje" POINTS="0 0,05 0,1 0,1" />
+  </DEFUZZIFY>
+  <RULEBLOCK AND="MIN" OR="MAX">
+    <RULE NUMBER="1" TEXT="IF Zaludek IS Lacno THEN Hodnota IS Zvysuje" />
+    <RULE NUMBER="2" TEXT="IF Zaludek IS Lehka THEN Hodnota IS Zvysuje" />
+    <RULE NUMBER="3" TEXT="IF Zaludek IS Stredni THEN Hodnota IS Zustava" />
+    <RULE NUMBER="4" TEXT="IF Zaludek IS Nadmerna THEN Hodnota IS Snizuje" />
+  </RULEBLOCK>
+</FUNCTION_BLOCK>

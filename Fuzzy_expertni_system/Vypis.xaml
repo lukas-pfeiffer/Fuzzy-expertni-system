@@ -1,0 +1,12 @@
+﻿<Window x:Class="Fuzzy_expertni_system.Vypis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vypis" Height="410" Width="494" WindowStyle="None" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+        <TextBlock x:Name="textBlok" Margin="10,10,10,0" TextWrapping="Wrap" Text="TextBlock" Height="365" VerticalAlignment="Top"/>
+        <Button x:Name="btnDoleva" Content="&lt;&lt;" Margin="10,380,401,0" RenderTransformOrigin="-0.4,0.5" Click="btnDoleva_Click" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="btnDoprava" Content="&gt;&gt;" Margin="90,380,321,0" RenderTransformOrigin="-0.4,0.5" Click="btnDoprava_Click" Height="20" VerticalAlignment="Top"/>
+        <Button x:Name="btnOk" Content="Ok" Margin="401,380,10,0" RenderTransformOrigin="-0.4,0.5" Height="20" VerticalAlignment="Top" Click="btnOk_Click"/>
+
+    </Grid>
+</Window>
